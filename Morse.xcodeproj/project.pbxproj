@@ -87,11 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C34DA42B1BC621F900E9ACB9 /* ViewControllers */,
-				C34DA4031BC4827C00E9ACB9 /* AppDelegate.h */,
-				C34DA4041BC4827C00E9ACB9 /* AppDelegate.m */,
 				C34DA40C1BC4827C00E9ACB9 /* Main.storyboard */,
-				C34DA40F1BC4827C00E9ACB9 /* Images.xcassets */,
-				C34DA4111BC4827C00E9ACB9 /* LaunchScreen.xib */,
 				C34DA4061BC4827C00E9ACB9 /* Morse.xcdatamodeld */,
 				C34DA3FF1BC4827C00E9ACB9 /* Supporting Files */,
 			);
@@ -101,6 +97,10 @@
 		C34DA3FF1BC4827C00E9ACB9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C34DA40F1BC4827C00E9ACB9 /* Images.xcassets */,
+				C34DA4031BC4827C00E9ACB9 /* AppDelegate.h */,
+				C34DA4111BC4827C00E9ACB9 /* LaunchScreen.xib */,
+				C34DA4041BC4827C00E9ACB9 /* AppDelegate.m */,
 				C34DA4001BC4827C00E9ACB9 /* Info.plist */,
 				C34DA4011BC4827C00E9ACB9 /* main.m */,
 			);

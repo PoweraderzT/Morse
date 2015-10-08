@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "ConverterViewController.h"
 
 @interface LoginViewController ()
 
@@ -23,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.passwordTextField.secureTextEntry = YES;
     
     [self modifyButton:self.loginButton];
     [self modifyButton:self.createNewAccountButton];
@@ -42,6 +45,11 @@
 
 -(BOOL)prefersStatusBarHidden{
     return YES;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ConverterViewController *vc = (ConverterViewController *)segue.destinationViewController;
+    vc.userName = self.userNameTextField.text;
 }
 
 // Willie "The Boy" Austin II

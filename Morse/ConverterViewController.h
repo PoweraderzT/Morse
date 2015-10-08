@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface ConverterViewController : UIViewController
+@interface ConverterViewController : UIViewController {
+    
+}
+
+@property (strong, nonatomic) NSString *userName;
 
 @end

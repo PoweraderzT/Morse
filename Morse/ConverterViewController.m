@@ -10,6 +10,7 @@
 
 @interface ConverterViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UIButton *logOutButton;
 
 @end
@@ -18,6 +19,9 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.userNameLabel.text = self.userName;
+    
     [self modifyButton:self.logOutButton];
 }
 
