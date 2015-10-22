@@ -175,6 +175,18 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uv-hL-Xi1">
+                                        <rect key="frame" x="500" y="65" width="84" height="39"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Random">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getRandomWord:" destination="qvk-0m-w90" eventType="touchUpInside" id="bPM-oX-JFW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16470588235294117" green="0.80784313725490198" blue="0.94901960784313721" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
@@ -183,11 +195,15 @@
                                     <constraint firstItem="XU3-rX-OQc" firstAttribute="top" secondItem="dNG-G9-LaJ" secondAttribute="bottom" constant="4" id="9KZ-Mw-XYm"/>
                                     <constraint firstItem="jLy-Gz-wB3" firstAttribute="leading" secondItem="ymX-A9-I28" secondAttribute="trailing" constant="14" id="CrO-WM-Z27"/>
                                     <constraint firstItem="ymX-A9-I28" firstAttribute="leading" secondItem="2mj-xB-qek" secondAttribute="leading" id="DgN-dI-eco"/>
+                                    <constraint firstItem="1uv-hL-Xi1" firstAttribute="leading" secondItem="jLy-Gz-wB3" secondAttribute="leading" id="DyH-rX-HiE"/>
                                     <constraint firstItem="ymX-A9-I28" firstAttribute="top" secondItem="G2h-cY-1pG" secondAttribute="top" constant="12" id="EiF-kV-tVL"/>
+                                    <constraint firstItem="1uv-hL-Xi1" firstAttribute="top" secondItem="jLy-Gz-wB3" secondAttribute="bottom" constant="18" id="FXI-Ne-683"/>
                                     <constraint firstItem="ymX-A9-I28" firstAttribute="leading" secondItem="G2h-cY-1pG" secondAttribute="leading" constant="16" id="JYx-Jq-PEB"/>
                                     <constraint firstItem="XFR-Pa-pcQ" firstAttribute="leading" secondItem="dNG-G9-LaJ" secondAttribute="leading" id="K9g-at-L1N"/>
+                                    <constraint firstItem="2mj-xB-qek" firstAttribute="top" secondItem="1uv-hL-Xi1" secondAttribute="bottom" constant="67" id="PBP-FV-L5N"/>
                                     <constraint firstItem="2mj-xB-qek" firstAttribute="top" secondItem="G2h-cY-1pG" secondAttribute="top" constant="171" id="PW1-rL-nsS"/>
                                     <constraint firstItem="XFR-Pa-pcQ" firstAttribute="top" secondItem="2mj-xB-qek" secondAttribute="bottom" constant="8" symbolic="YES" id="QLK-C5-bVS"/>
+                                    <constraint firstItem="1uv-hL-Xi1" firstAttribute="trailing" secondItem="jLy-Gz-wB3" secondAttribute="trailing" id="TNl-kb-slv"/>
                                     <constraint firstItem="dNG-G9-LaJ" firstAttribute="top" secondItem="XFR-Pa-pcQ" secondAttribute="bottom" constant="17" id="W92-0y-Boq"/>
                                     <constraint firstItem="2mj-xB-qek" firstAttribute="leading" secondItem="XFR-Pa-pcQ" secondAttribute="leading" id="aoY-mB-9YG"/>
                                     <constraint firstItem="jLy-Gz-wB3" firstAttribute="top" secondItem="G2h-cY-1pG" secondAttribute="topMargin" id="cX1-gJ-KUm"/>
@@ -209,13 +225,16 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="englishTextField" destination="XFR-Pa-pcQ" id="j1m-4v-oGK"/>
                         <outlet property="logOutButton" destination="jLy-Gz-wB3" id="q6J-ur-vWm"/>
+                        <outlet property="morseTextField" destination="XU3-rX-OQc" id="Zyw-0x-g2w"/>
+                        <outlet property="randomWordButton" destination="1uv-hL-Xi1" id="y1n-Cs-A63"/>
                         <outlet property="userNameLabel" destination="ymX-A9-I28" id="Ube-wz-XrC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kE0-ZL-dfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="196"/>
+            <point key="canvasLocation" x="1246" y="240"/>
         </scene>
     </scenes>
 </document>

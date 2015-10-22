@@ -7,11 +7,15 @@
 //
 
 #import "ConverterViewController.h"
+#import "RandomWordList.h"
 
 @interface ConverterViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UIButton *logOutButton;
+@property (weak, nonatomic) IBOutlet UIButton *randomWordButton;
+@property (weak, nonatomic) IBOutlet UITextField *englishTextField;
+@property (weak, nonatomic) IBOutlet UITextField *morseTextField;
 
 @end
 
@@ -23,6 +27,7 @@
     self.userNameLabel.text = self.userName;
     
     [self modifyButton:self.logOutButton];
+    [self modifyButton:self.randomWordButton];
 }
 
 -(BOOL)prefersStatusBarHidden{
@@ -39,4 +44,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)getRandomWord:(UIButton *)sender {
+    self.englishTextField.text = [RandomWordList getRandomWords];
+}
 @end

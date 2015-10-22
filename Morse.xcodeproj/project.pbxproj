@@ -16,6 +16,7 @@
 		C34DA4131BC4827C00E9ACB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34DA4111BC4827C00E9ACB9 /* LaunchScreen.xib */; };
 		C34DA41F1BC4827C00E9ACB9 /* MorseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA41E1BC4827C00E9ACB9 /* MorseTests.m */; };
 		C34DA42A1BC621EC00E9ACB9 /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA4291BC621EC00E9ACB9 /* ConverterViewController.m */; };
+		C350373B1BD94DC800D68F0A /* RandomWordList.m in Sources */ = {isa = PBXBuildFile; fileRef = C350373A1BD94DC800D68F0A /* RandomWordList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		C34DA41E1BC4827C00E9ACB9 /* MorseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MorseTests.m; sourceTree = "<group>"; };
 		C34DA4281BC621EC00E9ACB9 /* ConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConverterViewController.h; sourceTree = "<group>"; };
 		C34DA4291BC621EC00E9ACB9 /* ConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterViewController.m; sourceTree = "<group>"; };
+		C35037391BD94DC800D68F0A /* RandomWordList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomWordList.h; sourceTree = "<group>"; };
+		C350373A1BD94DC800D68F0A /* RandomWordList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomWordList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				C34DA4291BC621EC00E9ACB9 /* ConverterViewController.m */,
 				C34DA4091BC4827C00E9ACB9 /* LoginViewController.h */,
 				C34DA40A1BC4827C00E9ACB9 /* LoginViewController.m */,
+				C35037391BD94DC800D68F0A /* RandomWordList.h */,
+				C350373A1BD94DC800D68F0A /* RandomWordList.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			files = (
 				C34DA4051BC4827C00E9ACB9 /* AppDelegate.m in Sources */,
 				C34DA42A1BC621EC00E9ACB9 /* ConverterViewController.m in Sources */,
+				C350373B1BD94DC800D68F0A /* RandomWordList.m in Sources */,
 				C34DA4081BC4827C00E9ACB9 /* Morse.xcdatamodeld in Sources */,
 				C34DA40B1BC4827C00E9ACB9 /* LoginViewController.m in Sources */,
 				C34DA4021BC4827C00E9ACB9 /* main.m in Sources */,
@@ -434,6 +440,7 @@
 				C34DA4241BC4827C00E9ACB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C34DA4251BC4827C00E9ACB9 /* Build configuration list for PBXNativeTarget "MorseTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +449,7 @@
 				C34DA4271BC4827C00E9ACB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
