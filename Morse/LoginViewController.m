@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "ConverterViewController.h"
+#import "RegisterViewController.h"
 
 @interface LoginViewController ()
 
@@ -15,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *createNewAccountButton;
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+- (IBAction)btnLogin:(id)sender;
 
 @end
 
@@ -30,7 +32,6 @@
     [self modifyButton:self.loginButton];
     [self modifyButton:self.createNewAccountButton];
     // Do any additional setup after loading the view, typically from a nib.
-    //Bert
 }
 
 #pragma mark - Modify Buttons
@@ -48,10 +49,36 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    ConverterViewController *vc = (ConverterViewController *)segue.destinationViewController;
-    vc.userName = self.userNameTextField.text;
+    if([segue.identifier isEqual: @"register"]){
+        RegisterViewController *rvc = (RegisterViewController *)segue.destinationViewController;
+    }
+    else{
+        ConverterViewController *cvc = (ConverterViewController *)segue.destinationViewController;
+        cvc.userName = self.userNameTextField.text;
+    }
 }
 
-// Willie "The Boy" Austin II
-
+- (IBAction)btnLogin:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    if([_userNameTextField.text isEqualToString:@""] || [_passwordTextField.text isEqualToString:@""]){
+        UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill in all fields" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [error show];
+    }
+    else{
+        if([_userNameTextField.text isEqualToString:[defaults objectForKey:@"username"]]&& [_passwordTextField.text isEqualToString:[defaults objectForKey:@"password"]]){
+            _userNameTextField = nil;
+            _passwordTextField = nil;
+            [self performSegueWithIdentifier:@"login" sender:self];
+        }
+        
+        else{
+            UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Username and password do not match" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            
+            [error show];
+        }
+    }
+    
+}
 @end

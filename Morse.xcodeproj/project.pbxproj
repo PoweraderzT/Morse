@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C88080C1BE6CE580036D201 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C88080B1BE6CE580036D201 /* RegisterViewController.m */; };
+		4CD94FB71BE8145A00CD4A82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD94FB61BE8145A00CD4A82 /* Images.xcassets */; };
 		C34DA4021BC4827C00E9ACB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA4011BC4827C00E9ACB9 /* main.m */; };
 		C34DA4051BC4827C00E9ACB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA4041BC4827C00E9ACB9 /* AppDelegate.m */; };
 		C34DA4081BC4827C00E9ACB9 /* Morse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C34DA4061BC4827C00E9ACB9 /* Morse.xcdatamodeld */; };
 		C34DA40B1BC4827C00E9ACB9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA40A1BC4827C00E9ACB9 /* LoginViewController.m */; };
 		C34DA40E1BC4827C00E9ACB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34DA40C1BC4827C00E9ACB9 /* Main.storyboard */; };
-		C34DA4101BC4827C00E9ACB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C34DA40F1BC4827C00E9ACB9 /* Images.xcassets */; };
 		C34DA4131BC4827C00E9ACB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34DA4111BC4827C00E9ACB9 /* LaunchScreen.xib */; };
 		C34DA41F1BC4827C00E9ACB9 /* MorseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA41E1BC4827C00E9ACB9 /* MorseTests.m */; };
 		C34DA42A1BC621EC00E9ACB9 /* ConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA4291BC621EC00E9ACB9 /* ConverterViewController.m */; };
@@ -30,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C88080A1BE6CE580036D201 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Morse.xcodeproj/../RegisterViewController.h; sourceTree = SOURCE_ROOT; };
+		4C88080B1BE6CE580036D201 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Morse.xcodeproj/../RegisterViewController.m; sourceTree = SOURCE_ROOT; };
+		4CD94FB61BE8145A00CD4A82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C34DA3FC1BC4827C00E9ACB9 /* Morse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34DA4001BC4827C00E9ACB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C34DA4011BC4827C00E9ACB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +43,6 @@
 		C34DA4091BC4827C00E9ACB9 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		C34DA40A1BC4827C00E9ACB9 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C34DA40D1BC4827C00E9ACB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C34DA40F1BC4827C00E9ACB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C34DA4121BC4827C00E9ACB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C34DA4181BC4827C00E9ACB9 /* MorseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C34DA41D1BC4827C00E9ACB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,12 +103,12 @@
 		C34DA3FF1BC4827C00E9ACB9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C34DA40F1BC4827C00E9ACB9 /* Images.xcassets */,
 				C34DA4031BC4827C00E9ACB9 /* AppDelegate.h */,
 				C34DA4111BC4827C00E9ACB9 /* LaunchScreen.xib */,
 				C34DA4041BC4827C00E9ACB9 /* AppDelegate.m */,
 				C34DA4001BC4827C00E9ACB9 /* Info.plist */,
 				C34DA4011BC4827C00E9ACB9 /* main.m */,
+				4CD94FB61BE8145A00CD4A82 /* Images.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,6 +133,8 @@
 		C34DA42B1BC621F900E9ACB9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4C88080A1BE6CE580036D201 /* RegisterViewController.h */,
+				4C88080B1BE6CE580036D201 /* RegisterViewController.m */,
 				C34DA4281BC621EC00E9ACB9 /* ConverterViewController.h */,
 				C34DA4291BC621EC00E9ACB9 /* ConverterViewController.m */,
 				C34DA4091BC4827C00E9ACB9 /* LoginViewController.h */,
@@ -220,9 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD94FB71BE8145A00CD4A82 /* Images.xcassets in Resources */,
 				C34DA40E1BC4827C00E9ACB9 /* Main.storyboard in Resources */,
 				C34DA4131BC4827C00E9ACB9 /* LaunchScreen.xib in Resources */,
-				C34DA4101BC4827C00E9ACB9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +249,7 @@
 				C34DA42A1BC621EC00E9ACB9 /* ConverterViewController.m in Sources */,
 				C350373B1BD94DC800D68F0A /* RandomWordList.m in Sources */,
 				C34DA4081BC4827C00E9ACB9 /* Morse.xcdatamodeld in Sources */,
+				4C88080C1BE6CE580036D201 /* RegisterViewController.m in Sources */,
 				C34DA40B1BC4827C00E9ACB9 /* LoginViewController.m in Sources */,
 				C34DA4021BC4827C00E9ACB9 /* main.m in Sources */,
 			);
