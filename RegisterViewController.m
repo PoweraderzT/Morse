@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txfConfirmPassword;
 
 - (IBAction)btnCreate:(id)sender;
+- (IBAction)btnHome:(id)sender;
 
 @end
 
@@ -58,6 +59,8 @@
     }
     
 }
+
+
 - (void) registerNewUser{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:_txfUsername.text forKey:@"username"];
@@ -71,4 +74,7 @@
     [self performSegueWithIdentifier:@"home" sender:self];
 }
 
+- (IBAction)btnHome:(id)sender {
+    [self performSegueWithIdentifier:@"home" sender:self];
+}
 @end
