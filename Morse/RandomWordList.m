@@ -12,7 +12,7 @@
 
 + (NSString *)getRandomWords
 {
-    return [@[@"man", @"house", @"kid", @"campus", @"life", @"beer", @"sun", @"storm", @"chair", @"window", @"glass", @"astronaut", @"phone", @"teacher", @"professor", @"university", @"apple", @"orange", @"car", @"book"] objectAtIndex:(rand() % 20)];
+    return [@[@"man", @"house", @"kid", @"campus", @"life", @"beer", @"sun", @"storm", @"chair", @"window", @"glass", @"astronaut", @"phone", @"teacher", @"professor", @"university", @"apple", @"orange", @"car", @"book", @"India", @"Rajasthan", @"Mumbai", @"Delhi", @"Bengaluru"] objectAtIndex:(rand() % 25)];
 }
 
 @end

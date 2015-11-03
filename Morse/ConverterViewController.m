@@ -39,6 +39,76 @@
     button.layer.borderWidth = 1;
     button.layer.borderColor = [UIColor clearColor].CGColor;
 }
+- (IBAction)convertButton:(UIButton *)sender {
+    NSDictionary *morseCharacterArray = @{
+        @"A" : @".-",
+        @"B" : @"-...",
+        @"C" : @"-.-.",
+        @"D" : @"-..",
+        @"E" : @".",
+        @"F" : @"..-.",
+        @"G" : @"--.",
+        @"H" : @"....",
+        @"I" : @"..",
+        @"J" : @".---",
+        @"K" : @"-.-",
+        @"L" : @".-..",
+        @"M" : @"--",
+        @"N" : @"-.",
+        @"O" : @"---",
+        @"P" : @".--.",
+        @"Q" : @"--.-",
+        @"R" : @".-.",
+        @"S" : @"...",
+        @"T" : @"-",
+        @"U" : @"..-",
+        @"V" : @"...-",
+        @"W" : @".--",
+        @"X" : @"-..-",
+        @"Y" : @"-.--",
+        @"Z" : @"--..",
+        @"1" : @".----",
+        @"2" : @"..---",
+        @"3" : @"...--",
+        @"4" : @"....-",
+        @"5" : @".....",
+        @"6" : @"-....",
+        @"7" : @"--...",
+        @"8" : @"---..",
+        @"9" : @"----.",
+        @"0" : @"-----",
+        @" " : @" ",
+        @"," : @"--..--",
+        @"." : @".-.-.-",
+        @"?" : @"..--..",
+        @"\'" : @".----.",
+        @"!" : @"-.-.--",
+        @"/" : @"-..-.",
+        @"(" : @"-.--.",
+        @")" : @"-.--.-",
+        @"&" : @".-...",
+        @":" : @"---...",
+        @";" : @"-.-.-.",
+        @"=" : @"-...-",
+        @"+" : @".-.-.",
+        @"-" : @"-....-",
+        @"_" : @"..--.-",
+        @"\"" : @".-..-.",
+        @"$" : @"...-..-",
+        @"@" : @".--.-."
+        };
+    
+    NSString *inputString = [self.englishTextField.text uppercaseString];
+    
+    NSMutableString *outputString = [NSMutableString string];
+    
+    for (NSInteger charIdx=0; charIdx<inputString.length; charIdx++) {
+        NSString *string = [NSString stringWithFormat:@"%c", [inputString characterAtIndex:charIdx]];
+        NSString *charValue = [morseCharacterArray objectForKeyedSubscript:string];
+        [outputString appendString:charValue];
+    }
+    self.morseTextField.text = outputString;
+}
 
 - (IBAction)logOut:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -46,5 +116,9 @@
 
 - (IBAction)getRandomWord:(UIButton *)sender {
     self.englishTextField.text = [RandomWordList getRandomWords];
+    self.morseTextField.text = @"";
+    [self convertButton:self];
+    
 }
+
 @end
