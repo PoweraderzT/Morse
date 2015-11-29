@@ -14,8 +14,11 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *createNewAccountButton;
-@property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *userNameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+
+@property (strong) NSString *usernam3;
+
 - (IBAction)btnLogin:(id)sender;
 
 @end
@@ -47,14 +50,17 @@
 -(BOOL)prefersStatusBarHidden{
     return YES;
 }
+- (IBAction)usernameChanged:(UITextField *)sender {
+    self.usernam3 = self.userNameTextField.text;
+}
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqual: @"register"]){
-        RegisterViewController *rvc = (RegisterViewController *)segue.destinationViewController;
+        //RegisterViewController *rvc = (RegisterViewController *)segue.destinationViewController;
     }
     else{
         ConverterViewController *cvc = (ConverterViewController *)segue.destinationViewController;
-        cvc.userName = self.userNameTextField.text;
+        cvc.userName = self.usernam3;
     }
 }
 

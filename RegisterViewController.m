@@ -31,16 +31,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)btnCreate:(id)sender {
     if([_txfUsername.text isEqualToString:@""]||[_txfPassword.text isEqualToString:@""]||[_txfConfirmPassword.text isEqualToString:@""]){
         UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill in all fields" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -59,7 +49,6 @@
     }
     
 }
-
 
 - (void) registerNewUser{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
