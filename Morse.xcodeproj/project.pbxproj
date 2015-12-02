@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C88080C1BE6CE580036D201 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C88080B1BE6CE580036D201 /* RegisterViewController.m */; };
 		4CD94FB71BE8145A00CD4A82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD94FB61BE8145A00CD4A82 /* Images.xcassets */; };
+		C33665161C0E9ED900203F99 /* EnglishScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33665151C0E9ED900203F99 /* EnglishScoreViewController.m */; };
 		C3431BB51BE87A260019200C /* Morse2LetterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3431BB41BE87A260019200C /* Morse2LetterViewController.m */; };
 		C34DA4021BC4827C00E9ACB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA4011BC4827C00E9ACB9 /* main.m */; };
 		C34DA4051BC4827C00E9ACB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C34DA4041BC4827C00E9ACB9 /* AppDelegate.m */; };
@@ -35,6 +36,8 @@
 		4C88080A1BE6CE580036D201 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = Morse.xcodeproj/../RegisterViewController.h; sourceTree = SOURCE_ROOT; };
 		4C88080B1BE6CE580036D201 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = Morse.xcodeproj/../RegisterViewController.m; sourceTree = SOURCE_ROOT; };
 		4CD94FB61BE8145A00CD4A82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C33665141C0E9ED900203F99 /* EnglishScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnglishScoreViewController.h; sourceTree = "<group>"; };
+		C33665151C0E9ED900203F99 /* EnglishScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnglishScoreViewController.m; sourceTree = "<group>"; };
 		C3431BB31BE87A260019200C /* Morse2LetterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Morse2LetterViewController.h; sourceTree = "<group>"; };
 		C3431BB41BE87A260019200C /* Morse2LetterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Morse2LetterViewController.m; sourceTree = "<group>"; };
 		C34DA3FC1BC4827C00E9ACB9 /* Morse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +149,8 @@
 				C350373A1BD94DC800D68F0A /* RandomWordList.m */,
 				C3431BB31BE87A260019200C /* Morse2LetterViewController.h */,
 				C3431BB41BE87A260019200C /* Morse2LetterViewController.m */,
+				C33665141C0E9ED900203F99 /* EnglishScoreViewController.h */,
+				C33665151C0E9ED900203F99 /* EnglishScoreViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C34DA4051BC4827C00E9ACB9 /* AppDelegate.m in Sources */,
+				C33665161C0E9ED900203F99 /* EnglishScoreViewController.m in Sources */,
 				C34DA42A1BC621EC00E9ACB9 /* ConverterViewController.m in Sources */,
 				C350373B1BD94DC800D68F0A /* RandomWordList.m in Sources */,
 				C34DA4081BC4827C00E9ACB9 /* Morse.xcdatamodeld in Sources */,

@@ -39,6 +39,7 @@
     button.layer.borderWidth = 1;
     button.layer.borderColor = [UIColor clearColor].CGColor;
 }
+
 - (IBAction)englishTextChanged:(UITextField *)sender {
     NSDictionary *morseCharacterArray = @{
                                           @"A" : @".-",
@@ -130,18 +131,18 @@
                                             @".-.."  : @"L",
                                             @"--." : @"M",
                                             @"-." : @"N" ,
-                                            @"---":@"O",
-                                            @".--.":@"P",
-                                            @"Q" : @"--.-",
-                                            @"R" : @".-.",
-                                            @"S" : @"...",
-                                            @"T" : @"-",
-                                            @"U" : @"..-",
-                                            @"V" : @"...-",
-                                            @"W" : @".--",
-                                            @"X" : @"-..-",
-                                            @"Y" : @"-.--",
-                                            @"Z" : @"--..",
+                                            @"---" : @"O",
+                                            @".--." : @"P",
+                                            @"--.-" : @"Q",
+                                            @".-." : @"R",
+                                            @"..." : @"S",
+                                            @"-" : @"T",
+                                            @"..-" : @"U",
+                                            @"...-" : @"V",
+                                            @".--" : @"W",
+                                            @"-..-":@"X",
+                                            @"-.--":@"Y",
+                                            @"--..":@"Z",
                                             @"1" : @".----",
                                             @"2" : @"..---",
                                             @"3" : @"...--",
@@ -184,7 +185,6 @@
         
         if (charValue != nil) {
             [outputString appendString:charValue];
-            [outputString appendString:@"  "];
         }
     }
     self.englishTextField.text = outputString;
